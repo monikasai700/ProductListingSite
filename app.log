@@ -1,0 +1,25 @@
+2023-02-19T18:18:15.594-05:00  INFO 18934 --- [main] c.test.angular.AngularApplicationTests   : Starting AngularApplicationTests using Java 19 with PID 18934 (started by smt in /Users/smt/Documents/SMT Codebases/angular)
+2023-02-19T18:18:15.620-05:00  INFO 18934 --- [main] c.test.angular.AngularApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-02-19T18:18:17.301-05:00  INFO 18934 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-02-19T18:18:17.410-05:00  INFO 18934 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87 ms. Found 2 JPA repository interfaces.
+2023-02-19T18:18:18.269-05:00  INFO 18934 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-02-19T18:18:18.792-05:00  INFO 18934 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:test user=SA
+2023-02-19T18:18:18.796-05:00  INFO 18934 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-02-19T18:18:18.886-05:00  INFO 18934 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-02-19T18:18:19.004-05:00  INFO 18934 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-02-19T18:18:19.422-05:00  WARN 18934 --- [main] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-02-19T18:18:19.822-05:00  INFO 18934 --- [main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2023-02-19T18:18:21.558-05:00  INFO 18934 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-02-19T18:18:21.577-05:00  INFO 18934 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T18:18:22.323-05:00  WARN 18934 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-02-19T18:18:22.985-05:00  INFO 18934 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:test'
+2023-02-19T18:18:23.074-05:00  INFO 18934 --- [main] c.test.angular.AngularApplicationTests   : Started AngularApplicationTests in 8.54 seconds (process running for 10.706)
+2023-02-19T18:18:24.061-05:00  INFO 18934 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-02-19T18:18:24.066-05:00  INFO 18934 --- [SpringApplicationShutdownHook] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2023-02-19T18:18:24.074-05:00  WARN 18934 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2023-02-19T18:18:24.075-05:00 ERROR 18934 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-19T18:18:24.076-05:00  WARN 18934 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : SQL Error: 90121, SQLState: 90121
+2023-02-19T18:18:24.076-05:00 ERROR 18934 --- [SpringApplicationShutdownHook] o.h.engine.jdbc.spi.SqlExceptionHelper   : Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+2023-02-19T18:18:24.077-05:00  WARN 18934 --- [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+2023-02-19T18:18:24.078-05:00  INFO 18934 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-02-19T18:18:24.080-05:00  INFO 18934 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
